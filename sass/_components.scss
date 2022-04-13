@@ -282,6 +282,7 @@
     display: inline-block;
     cursor: pointer;
     transition: all .2s;
+    background-color: var(--color-grey-light-1);
 
     &:hover {
         color: var(--color-grey-dark-1);
@@ -310,3 +311,50 @@
         box-shadow: none;
     }
 }
+
+//////////////////////////////
+// PARAGRAPH
+.paragraph:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+//////////////////////////////
+// LIST
+.list {
+    margin: 3rem 0;
+    list-style: none;
+    padding: 3rem 0;
+    border-bottom: var(--line);
+    border-top: var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+    }
+
+    &__item::before {
+                // including an svg file via background image
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: 7px;
+
+        // Approach for older browesrs
+        // background-image: url('../img/chevron-thin-right.svg');
+        // background-size: cover;
+
+        // Newer browsers - users css-masks
+        background-color: var(--color-primary);
+        -webkit-mask-image: url('../img/chevron-thin-right.svg');
+        -webkit-mask-size: cover;
+    }
+}
+
+
+
+//////////////////////////////
+// RECOMMEND
