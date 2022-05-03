@@ -13,7 +13,7 @@
 
 This is hosted on the live demo link below.
 
-[Live Demo Link](https://sirricelles.github.io/portfolio/)
+[Live Demo Link](https://sirricelles.github.io/css-trillor-app/)
 
 ## Getting Started
 
